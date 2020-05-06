@@ -12,6 +12,7 @@ class Carousel extends Model
     protected $fillable = [
         'carousel',
         'keterangan',
+        'link',
         'status'
     ];
 }

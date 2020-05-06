@@ -30,6 +30,13 @@
                             </div>
                         </div>
                         <div class="form-group row">
+                            <label class="col-form-label col-sm-2 text-sm-right">Link</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="link" id="link" class="form-control" placeholder="Link" value="{{$carousel->link}}">
+                                <small style="color: blue">Cantumkan Lengkap Dengan Http/Https nya</small>
+                            </div>
+                        </div>
+                        <div class="form-group row">
                             <label class="col-form-label col-sm-2 text-sm-right">Status</label>
                             <div class="col-sm-10">
                                 <select name="status" id="status" class="form-control select2">

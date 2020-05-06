@@ -20,6 +20,7 @@
                                 <th>No</th>
                                 <th>Gambar</th>
                                 <th>Keterangan/ Caption</th>
+                                <th>Link</th>
                                 <th>Status</th>
                                 <th>Aksi</th>
                             </tr>
@@ -57,6 +58,10 @@
                 {
                     data: 'keterangan',
                     name: 'keterangan'
+                },
+                {
+                    data: 'link',
+                    name: 'link'
                 },
                 {
                     data: 'status',

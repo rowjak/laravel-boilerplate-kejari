@@ -73,7 +73,7 @@ class CarouselController extends Controller
         $validasi = Validator::make($data,[
             'keterangan'=>'required',
             'status'=>'required',
-            'carousel'=>'required|image|mimes:jpeg,jpg,png|max:4096'
+            'carousel'=>'required|mimes:jpeg,jpg,png,mp4,mov,ogg,mkv|max:20000'
         ]);
 
         if ($validasi->fails())
@@ -136,7 +136,7 @@ class CarouselController extends Controller
         $validasi = Validator::make($data,[
             'keterangan'=>'required',
             'status'=>'required',
-            'carousel'=>'sometimes|nullable|image|mimes:jpeg,jpg,png|max:4096'
+            'carousel'=>'sometimes|nullable|mimes:jpeg,jpg,png,mp4,mov,ogg,mkv|max:20000'
         ]);
 
         if ($validasi->fails())
