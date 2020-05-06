@@ -19,4 +19,9 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('dashboard', 'DashboardController@index')->name('dashboard');
+
+Route::resource('carousel', 'CarouselController')->except(['show']);
+Route::resource('runningtext', 'RunningTextController')->except(['show','create']);
+Route::resource('sidang', 'SidangController')->except(['show']);
+Route::resource('tempat', 'TempatController')->except(['show']);
